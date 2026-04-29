@@ -1,0 +1,15 @@
+.rg-filters { display: flex; gap: 10px; margin-bottom: 36px; flex-wrap: wrap; }
+.rg-filter { background: none; border: 1px solid var(--border); color: var(--text2); padding: 9px 24px; border-radius: 4px; font-size: 13px; font-family: var(--font-body); transition: all 0.25s; }
+.rg-filter.active, .rg-filter:hover { background: var(--amber); border-color: var(--amber); color: #fff; }
+.rg-masonry { columns: 3; gap: 14px; }
+.rg-item { break-inside: avoid; margin-bottom: 14px; position: relative; border-radius: 8px; overflow: hidden; cursor: pointer; }
+.rg-item img { width: 100%; display: block; transition: transform 0.4s; }
+.rg-item:hover img { transform: scale(1.05); }
+.rg-overlay { position: absolute; inset: 0; background: rgba(28,18,8,0.45); display: flex; align-items: center; justify-content: center; opacity: 0; transition: opacity 0.3s; }
+.rg-item:hover .rg-overlay { opacity: 1; }
+.rg-overlay span { color: var(--cream); font-size: 13px; letter-spacing: 2px; border: 1px solid var(--cream); padding: 8px 20px; border-radius: 4px; }
+.rg-lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 9999; display: flex; align-items: center; justify-content: center; padding: 20px; }
+.rg-lightbox img { max-width: 90vw; max-height: 90vh; border-radius: 8px; object-fit: contain; }
+.rg-lb-close { position: absolute; top: 24px; right: 32px; background: none; border: 1px solid rgba(255,255,255,0.3); color: white; width: 44px; height: 44px; border-radius: 50%; font-size: 18px; cursor: pointer; }
+@media (max-width: 900px) { .rg-masonry { columns: 2; } }
+@media (max-width: 480px) { .rg-masonry { columns: 1; } }

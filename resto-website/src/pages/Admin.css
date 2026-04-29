@@ -1,0 +1,45 @@
+.ra-layout { display: flex; min-height: 100vh; background: var(--bg2); font-family: var(--font-body); }
+.ra-login { min-height: 100vh; background: var(--dark); display: flex; align-items: center; justify-content: center; }
+.ra-login-box { background: var(--dark2); border: 1px solid rgba(200,118,42,0.2); border-radius: 12px; padding: 48px; width: 100%; max-width: 400px; }
+.ra-logo { font-family: var(--font-display); font-size: 20px; color: var(--amber); margin-bottom: 28px; text-align: center; }
+.ra-login-box form { display: flex; flex-direction: column; gap: 14px; }
+.ra-input { background: rgba(255,255,255,0.05); border: 1px solid rgba(200,118,42,0.2); border-radius: 8px; padding: 12px 14px; color: var(--cream); font-size: 14px; font-family: var(--font-body); width: 100%; }
+.ra-input:focus { outline: none; border-color: var(--amber); }
+.ra-sidebar { width: 240px; background: var(--dark); border-right: 1px solid rgba(200,118,42,0.15); display: flex; flex-direction: column; flex-shrink: 0; }
+.ra-sidebar-logo { font-family: var(--font-display); font-size: 18px; color: var(--amber); padding: 28px 24px; border-bottom: 1px solid rgba(200,118,42,0.15); }
+.ra-link { display: flex; align-items: center; gap: 12px; padding: 12px 24px; color: rgba(245,234,213,0.6); font-size: 14px; text-decoration: none; transition: all 0.2s; border: none; background: none; cursor: pointer; width: 100%; }
+.ra-link:hover, .ra-link.active { color: var(--amber); background: rgba(200,118,42,0.08); }
+.ra-sidebar-footer { margin-top: auto; padding: 16px 0; border-top: 1px solid rgba(200,118,42,0.15); }
+.ra-main { flex: 1; overflow: auto; }
+.ra-content { padding: 40px; }
+.ra-header { margin-bottom: 32px; }
+.ra-header h1 { font-family: var(--font-display); font-size: 32px; font-weight: 400; color: var(--dark); }
+.ra-header p { font-size: 14px; color: var(--text2); margin-top: 4px; }
+.ra-stats { display: grid; grid-template-columns: repeat(4,1fr); gap: 18px; margin-bottom: 28px; }
+.ra-stat-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+.ra-stat-icon { font-size: 22px; margin-bottom: 10px; }
+.ra-stat-val { font-family: var(--font-display); font-size: 36px; color: var(--amber); }
+.ra-stat-label { font-size: 11px; color: var(--text2); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+.ra-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; margin-bottom: 24px; }
+.ra-card-header { display: flex; justify-content: space-between; align-items: center; padding: 18px 24px; border-bottom: 1px solid var(--border); flex-wrap: wrap; gap: 10px; }
+.ra-card-header h2 { font-family: var(--font-display); font-size: 20px; font-weight: 400; }
+.ra-card-link { font-size: 13px; color: var(--amber); }
+.ra-table { width: 100%; border-collapse: collapse; }
+.ra-table th { background: var(--bg2); color: var(--text2); font-size: 11px; letter-spacing: 1px; text-transform: uppercase; padding: 12px 18px; text-align: left; border-bottom: 1px solid var(--border); }
+.ra-table td { padding: 13px 18px; font-size: 13px; color: var(--dark); border-bottom: 1px solid rgba(0,0,0,0.04); }
+.ra-table tr:last-child td { border-bottom: none; }
+.ra-table tr:hover td { background: var(--bg); }
+.ra-badge { display: inline-block; padding: 4px 10px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+.ra-badge.confirmed { background: rgba(45,122,58,0.12); color: #2d7a3a; }
+.ra-badge.pending { background: rgba(200,118,42,0.12); color: var(--amber); }
+.ra-badge.cancelled { background: rgba(160,40,40,0.12); color: #a02828; }
+.ra-action { border: none; width: 30px; height: 30px; border-radius: 6px; font-size: 12px; margin-right: 4px; cursor: pointer; }
+.ra-action.confirm { background: rgba(45,122,58,0.12); color: #2d7a3a; }
+.ra-action.cancel { background: rgba(160,40,40,0.12); color: #a02828; }
+.ra-filter-tabs { display: flex; gap: 6px; flex-wrap: wrap; }
+.ra-filter-tab { background: none; border: 1px solid var(--border); color: var(--text2); padding: 7px 14px; border-radius: 20px; font-size: 12px; cursor: pointer; font-family: var(--font-body); transition: all 0.2s; }
+.ra-filter-tab.active { background: var(--amber); color: #fff; border-color: var(--amber); }
+.ra-btn-sm { background: var(--amber); color: #fff; border: none; padding: 8px 18px; border-radius: 6px; font-size: 13px; cursor: pointer; font-family: var(--font-body); white-space: nowrap; }
+.ra-add-form { display: flex; gap: 10px; padding: 14px 24px; background: var(--bg); border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.ra-input-sm { background: #fff; border: 1px solid var(--border); border-radius: 6px; padding: 8px 12px; color: var(--dark); font-size: 13px; font-family: var(--font-body); }
+@media (max-width: 900px) { .ra-stats { grid-template-columns: repeat(2,1fr); } .ra-sidebar { display: none; } }

@@ -1,0 +1,105 @@
+# ═══════════════════════════════════════════
+# SALON & RESTAURANT FULLSTACK — .gitignore
+# React.js + Spring Boot + MySQL
+# ═══════════════════════════════════════════
+
+# ─── NODE / REACT (salon-website & resto-website) ───
+node_modules/
+build/
+dist/
+.npm/
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp/
+.pnp.js
+coverage/
+.cache/
+
+# ─── SPRING BOOT / MAVEN ────────────────────
+target/
+*.jar
+*.war
+*.class
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+!.mvn/wrapper/maven-wrapper.properties
+spring-shell.log
+
+# ─── APPLICATION SECRETS ────────────────────
+**/application.properties
+**/application.yml
+**/application-prod.properties
+**/application-prod.yml
+**/application-local.properties
+
+# Keep the template but not real secrets
+!**/application.properties.example
+
+# ─── DATABASE ───────────────────────────────
+*.sql.backup
+*.dump
+dump.rdb
+
+# ─── IDE — IntelliJ IDEA ────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# ─── IDE — VS Code ──────────────────────────
+.vscode/
+*.code-workspace
+
+# ─── IDE — Eclipse ──────────────────────────
+.classpath
+.project
+.settings/
+.factorypath
+bin/
+
+# ─── OS FILES ───────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# ─── LOGS ───────────────────────────────────
+logs/
+*.log
+*.log.*
+log/
+
+# ─── UPLOADS / USER FILES ───────────────────
+uploads/
+public/uploads/
+src/main/resources/uploads/
+
+# ─── SSL / CERTS ────────────────────────────
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.keystore
+*.jks
+
+# ─── VERCEL / DEPLOYMENT ────────────────────
+.vercel/
+.netlify/
+
+# ─── MISC ───────────────────────────────────
+*.tmp
+*.swp
+*.bak
+~$*
